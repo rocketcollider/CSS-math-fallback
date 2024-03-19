@@ -1,5 +1,7 @@
 # A CSS MathML fallback
-This project is from 2017. It is intended as a fallback and by nature not perfect. 
+This project is from 2017. It is intended as a fallback and by nature not perfect.
+
+***There is NO javascript code! Github's detection seems to be broken somehow.***
 
 ## Usage
 Have a look at `index.html`. You should see some nice mathematical expressions. Only Firefox and Safari will actually render MathML correctly, though. When a Chromium encounters MathML, it tries to render it as XML elements and looks awful. `cmml.css` needs to be loaded to style that "XML" in ways that look almost right. Due to limitations of CSS (such as no lookahead), not all features of MathML can be implemented. Height-scaling brackets are impossible. The root-symbol is an amalgamation of border and unicode-sign, beauty will depend on the font used.
